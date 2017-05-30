@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false">
+
+  <com.oreilly.demo.android.pa.uidemo.view.MonsterView
+      android:id="@+id/monsters"
+      android:focusableInTouchMode="true"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:background="@color/bll"
+      />
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:background="@color/nice_blue"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text1"
+        android:text="@string/defaultText"
+        android:focusable="false"
+        android:layout_height="wrap_content"
+        android:textColor="@color/opaque_orange"
+        android:layout_width="0dp"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:text="@string/defaultText"
+        android:focusable="false"
+        android:layout_height="wrap_content"
+        android:textColor="@color/opaque_orange"
+        android:layout_width="0dp"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:text="@string/defaultText"
+        android:focusable="false"
+        android:layout_height="wrap_content"
+        android:textColor="@color/opaque_orange"
+        android:layout_width="0dp"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/pukegreen"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClickStart"
+        android:textColor="@color/cyan"
+        android:text="Start"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClickStart"
+        android:textColor="@color/cyan"
+        android:text="Exit"
+        android:textSize="30sp" />
+  </LinearLayout>
+</LinearLayout>
